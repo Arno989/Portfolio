@@ -31,3 +31,9 @@ footer {
 .inter{
 	font-family: 'Inter UI', sans-serif;
 }
+
+.blog{
+	padding-top: 3em;
+	background-color: #F8F9FA !important;
+	text-align: left !important;
+}

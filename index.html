@@ -54,7 +54,10 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
             </li>
-			<li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
+            </li>
+			      <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#hobbies">Hobbies</a>
             </li>
             <li class="nav-item">
@@ -258,14 +261,14 @@
         <!-- Project One Row -->
         <div class="row justify-content-center no-gutters mb-4 mb-lg-0">
           <div class="col-lg-6">
-            <a href="https://mbrace.arnodefauw.be/"><img class="w-100" src="img/mbrace.png" alt="Client project"></a>
+            <a href="https://www.mbrace.be/"><img class="w-100" src="img/mbrace.png" alt="Client project"></a>
           </div>
           <div class="col-lg-6">
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-left" style="padding:3rem 4rem 3rem 5rem;">
                   <h4 class="text-white">Mbrace</h4>
-                  <p class="mb-0 text-white-50">Mbrace is an  executive search office that searches for the best career options for every firm or individual. I was asked to update their site so here is the latest of my projects</p>
+                  <p class="mb-0 text-white-50">Mbrace is an  executive search office that searches for the best career options for every firm or individual. I made this site with bootstrap.</p>
                   <hr class="d-none d-lg-block mb-0 ml-0">
                 </div>
               </div>
@@ -276,14 +279,15 @@
         <!-- Project Two Row -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-5">
           <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+            <a href=""></a><img class="img-fluid" src="img/ender.jpg" alt=""></a>
           </div>
           <div class="col-lg-6 order-lg-first">
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">WIP</h4>
-                  <p class="mb-0 text-white-50">This site is still a work in progress, more projects wil appear!</p>
+                  <h4 class="text-white">Ender-X-3000</h4>
+                  <p class="mb-0 text-white-50">A school project where we combine all skills learned during the year to prove our worth and abilities</br>
+                    Here I made a case with sensors around my 3d printer, this data is put into a database and displayed on the website, on which you can control the 3D printer as well</p>
                   <hr class="d-none d-lg-block mb-0 mr-0">
                 </div>
               </div>
@@ -291,6 +295,32 @@
           </div>
         </div>
 		  
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="blog" class="text-center blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-black mb-4">Project blog</h2>
+            <p class="text-black-50">Voor mijn project wou ik een behuizing maken voor mijn 3d printer, het was leuk geweest om ook wat data te verzamelen over de atmosfeer die in deze behuizing gaande was, zoals een temperatuursensor, luchtvochtigheidssensor en een gas sensor aangezien printen met bepaalde materialen giftige gassen kan uitstoten. De 3d printer die ik heb is de Ender 3 van Creality en deze was voorzien om enkel PLA te printen, in mijn upgrade heb ik een nieuwe hotend gemonteerd die veel warmer kan worden voor PETG, een nieuwe nozzle van verhard staal die versterkte materialen kan printen zoals aluminium en fibre-filled plastics en betere koeling voor het printen zelf zodat mijn bridging veel beter wordt en ik minder supports moet gebruiken. </p>
+            <p class="text-black-50">Mijn eerste stap was dus om de volledige print head te vervangen in voorbereiding van project. Hier ben ik veel fouten begaan zoals beschreven in mijn vorige zelfreflectie. Ik had mijn lesje zowat geleerd en tijdens project zelf heb ik dan veel meer gekeken naar documentatie en voorbereidend werk gedaan voor ik aan taken begon. </p>
+            <p class="text-black-50">Dan toen mijn printer eindelijk was ge-upgrade was het tijd om project zelf te maken, voor de site ben ik door verschillende design stages gegaan, zelf al eens de site volledig uitgewerkt om erna te realiseren dat het eigenlijk niet zo mooi is, mijn design opnieuw in detail gemaakt in Adobe XD en dan de html opnieuw geschreven, deze keer in de correcte vorm van ITCSS. Voor de JS frontend ging alles redelijk vlot, ik had men database en backend ook al geschreven en alles werkte perfect.</p>
+            <p class="text-black-50">Toen wist Dieter mij te vertellen, in een andere mening dan Johan, dat mijn database anders moest zijn, dus ik mocht mijn front- en backend helemaal gaan herzien om voor de nieuwe database ook te werken.</p>
+            <p class="text-black-50">Na mijn database en frontend klaar was ben ik begonnen aan mijn schakeling om al mijn sensoren uit te lezen. Deze was klaar na een uurtje dus dan ben ik al direct begonnen aan het python script om mijn sensoren uit te lezen. Ik heb direct alle klasses van doorheen het jaar verzameld om deze makkelijk te kunnen gebruiken, dit maakte mijn script zeer gemakkelijk. Het ging dus heel vlot om te schrijven. De data naar de database sturen was ook niet al te moeilijk, aangezien mijn frontend en database al werkten kon ik alles ook direct testen en merkte ik dat het MVP van mijn project al klaar was, in week 1. </p>
+            <p class="text-black-50">Dan ben ik maar al direct beginnen uitbreiden door functionaliteit toe te voegen om mijn printer te besturen via de site, wat een hele taak is aangezien ik de seriële communicatie nog moest uitvissen en de taal waarin 3dprinters werken te ontleden om commands te sturen. Dit was een heel leuke uitdaging en heb ik mij enorm mee geamuseerd. Soms eens vast zitten om dan later de oplossing te vinden, domme fouten maken en slimme oplossingen vinden. Het is mij uiteindelijk gelukt om een paar commands door te sturen wat het mij mogelijk maakte om de printer te doen bewegen. Indien ik meer tijd had gehad zou ik nog het probleem van desynchonisatie kunnen fixen. Wel heb ik redelijk snel de usb webcam kunnen fixen om een live view van te printer te hebben.</p>
+            <p class="text-black-50">Om dan alles te kunnen testen en finaal te maken heb ik alle software op de Pi opgesteld, de database in mariaDB, het pyhton script automatisch te laten opstarten, en de website op apache gezet.</p>
+            <p class="text-black-50">Toen alles werkte ben ik begonnen aan de case. Ik heb eerst met een hoop karton een slechte versie gemaakt van de case om te checken of mijn afmetingen decent waren en om te zien waar ik mijn sensoren zou hangen. Dan heb ik mijn planken gesneden en gedacht hoe ik het zou bricoleren. Ik heb hulp gevraagd aan een zelfstandig doe het zelver en na zijn uitleg zijn we samen naar de Brico Plan It gegaan achter nog wat extra materialen zoals spuitverf, lijm, scharnieren en aluminium profielen. Plexiglas had ik nog liggen. Dan na 3 dagen werken aan de doos was hij eindelijk af.</p>
+            <p class="text-black-50">Als mijn doos eindelijk thuis stond ben ik begonnen met mijn sensoren te solderen aan kabels, kabels af te meten, alles op zijn plaats te plakken en de cables te managen zodat het er wat deftig uit zag. Nadat ik alles had gemonteerd en de kabels terug aan men pi had verbonden zag ik dat ik waarschijnlijk wel mijn gassensor kapot had gemaakt. Spijtige zaak maar niks aan te doen.</p>
+            <p class="text-black-50">Tegen dan was mijn project zowat klaar. Dan heb ik nog mijn filamenten in een doos opgehangen en daar een gat in geboord zodat het niet kapot gaat door luchtvochtigheid.</p>
+            <p class="text-black-50">Aangezien ik toch al rgb leds had opgehangen kon ik ze even goed ook doen werken dus heb ik nog een pcb gesoldeerd om deze te kunnen aansturen via de externe voeding die ik ook gebruikte voor de ventilator.</p>
+            <p class="text-black-50">Na al dit merk ik dat we wat te weinig tijd hadden voor project om er iets goed van te maken, ik heb al mijn minimum dingen kunnen doen maar het was leuk geweest om wat meer functionaliteit te hebben en wat meer tijd voor afwerking, bijvoorbeeld om mijn site effectief responsive te maken, wat eerder een nice to have was voor mij. Het project is redelijk goed gelukt en zeker een goede representatie van wat we dit jaar gebben geleerd. Ik heb mij ook geamuseerd met alles te maken en nieuwe vrienden te maken uit de richting door samen in lokalen te werken en elkaar te helpen.</p>
+            <p class="text-black-50">Al bij al een geweldige ervaring.</p>
+
+          </div>
+        </div>
+        <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
       </div>
     </section>
 	  
@@ -338,7 +368,7 @@
           <div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left">
               <h4>That's Me</h4>
-              <p class="text-black-50 mb-0">You know, in case you wondered what i looked like, here's a really suave picture of me on the Belgian Air Force Days.</p>
+              <p class="text-black-50 mb-0">You know, in case you wondered what i looked like, here's a really suave picture of me at the Belgian Air Force Days.</p>
             </div>
           </div>
         </div>
@@ -365,6 +395,7 @@
       </div>
     </section>
 -->
+    
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section bg-black">
@@ -378,7 +409,7 @@
                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Address</h4>
                 <hr class="my-4">
-                <div class="small text-black-50">Achterstraat 142, 9040 Sint-Amandsberg<br/>Belgium</div>
+                <div class="small text-black-50">Hollebeekstraat 10<br/>9820 Merelbeke<br/>Belgium</div>
               </div>
             </div>
           </div>
